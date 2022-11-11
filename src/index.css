@@ -30,6 +30,9 @@ html {
   .nav {
     @apply sm:hidden bg-orange-400 bg-opacity-75  absolute top-20 bottom-0 left-0 right-0;
   }
+  .form {
+    @apply border-b-2 border-black px-4 py-2 placeholder:text-2xl focus:border-2 max-w-2xl;
+  }
   .bg-1 {
     background-image: url(./asset/A.jpg);
     background-position: center;
@@ -49,6 +52,21 @@ html {
     background-image: url(./asset/Car-3.jpg);
     background-position: center;
     background-size: cover;
+  }
+  .bg-main {
+    background-image: url(./asset/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: brightness(0.5); */
+  }
+  .text-large {
+    font-size: 20rem;
+    line-height: 2rem;
+  }
+  .text-md {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   /* .carosel {

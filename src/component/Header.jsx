@@ -1,33 +1,24 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import One from "../asset/Car-1.jpg";
-import Two from "../asset/Car-2.jpg";
 
-import Three from "../asset/Car-3.jpg";
-
-import Four from "../asset/A.jpg";
-import D from "../asset/D.jpg";
-
-import E from "../asset/E.jpg";
-
-import F from "../asset/F.jpg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import bg from "../asset/main.jpg";
 
 // import "./styles.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-import Item from "./Item";
+import B from "../asset/B.jpg";
 
 function Header() {
   return (
-    <div className="container mx-auto md:px-20 pt-10 text-white">
+    <section className="container mx-auto md:px-20 pt-10 text-white">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -43,9 +34,9 @@ function Header() {
         className="mySwiper "
       >
         <SwiperSlide className="w-[90vw] px-12 ">
-          <div className="bg-1 w-full h-[90vh]   ">
+          <div className="bg-1 w-full h-[70vh] md:h-[95vh]   ">
             <div className="w-full h-full bg-black bg-opacity-40">
-              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12 pt-60">
+              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12  md: pt-20 md:pt-60">
                 <h2 className=" text-7xl md:text-9xl  font-extrabold">
                   Project Paramount
                 </h2>
@@ -65,9 +56,9 @@ function Header() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-[90vw] px-12 ">
-          <div className="bg-3 w-full h-[90vh]   ">
+          <div className="bg-3 w-full h-[70vh] md:h-[95vh]   ">
             <div className="w-full h-full bg-black bg-opacity-40">
-              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12 pt-60">
+              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12  pt-20 md:pt-60">
                 <h2 className=" text-7xl md:text-9xl  font-extrabold">
                   Trinity Bank
                 </h2>
@@ -89,9 +80,9 @@ function Header() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-[90vw] px-12 ">
-          <div className="bg-2 w-full h-[90vh]   ">
+          <div className="bg-2 w-full h-[70vh] md:h-[95vh]   ">
             <div className="w-full h-full bg-black bg-opacity-40">
-              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12 pt-60">
+              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12  pt-20 md:pt-60">
                 <h2 className=" text-7xl md:text-9xl  font-extrabold">
                   Federal II Tower
                 </h2>
@@ -112,9 +103,9 @@ function Header() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="w-[90vw] px-12 ">
-          <div className="bg-4 w-full h-[90vh]   ">
+          <div className="bg-4 w-full h-[70vh] md:h-[95vh]   ">
             <div className="w-full h-full bg-black bg-opacity-40">
-              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12 pt-60">
+              <div className=" max-w-sm md:max-w-2xl items-center mx-auto text-center flex flex-col space-y-12  pt-20 md:pt-60">
                 <h2 className=" text-7xl md:text-9xl  font-extrabold">
                   Seraph Station
                 </h2>
@@ -135,6 +126,35 @@ function Header() {
           </div>
         </SwiperSlide>
       </Swiper>
+      <main className=" mx-12 my-4">
+        <h2 className="text-8xl md:text-[160px] xl:text-[190px] w-fit mx-auto text-gray-300   font-extrabold">
+          Welcome
+        </h2>
+        <main className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 text-gray-800 text-center">
+          <div className=" xl:w-3/4 flex mx-auto flex-col">
+            <h3
+              className="md
+            text-3xl md:text-5xl xl:text-7xl font-bold"
+            >
+              Welcome to Arch Studio
+            </h3>
+            <p className="text-2xl md:text-3xl font-extralight  md:pt-20">
+              We have a unique network and skillset to help bring your projects
+              to life. Our small team of highly skilled individuals combined
+              with our large network put us in a strong position to deliver
+              exceptional results. Over the past 10 years, we have worked on all
+              kinds of projects. From stations to high-rise buildings, we create
+              spaces that inspire and delight. We work closely with our clients
+              so that we understand the intricacies of each project. This allows
+              us to work in harmony the surrounding area to create truly
+              stunning projects that will stand the test of time.
+            </p>
+          </div>
+          <div className="md:flex hidden xl:md:-mt-40 -z-20 justify-center">
+            <img className="h-[100vh] " src={B} alt="" />
+          </div>
+        </main>
+      </main>
       {/* <section className="container mx-auto lg:px-8">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
           <div className="relative ">
@@ -148,7 +168,14 @@ function Header() {
           </div>
         </div>
       </section> */}
-    </div>
+      {/* <section className="bg-main  mx-auto container h-[70vh]">
+        Small team <br />
+        big ideas
+      </section> */}
+      {/* <section className="container my-20   mx-auto">
+        <img className="absolute w-full h-[70vh] " src={bg} alt="" />
+      </section> */}
+    </section>
   );
 }
 export default Header;
