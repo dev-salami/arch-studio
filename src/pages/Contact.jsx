@@ -1,4 +1,11 @@
+import Form from "../component/form";
+import Footer from "../component/Footer";
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <>
+      <Form />
+      <Footer />
+    </>
+  );
 }
 export default Contact;
