@@ -1,4 +1,108 @@
+import One from "../asset/about-0.jpg";
+import Two from "../asset/about-1.jpg";
+import p2 from "../asset/person-2.jpg";
+import p3 from "../asset/person-3.jpg";
+import p4 from "../asset/person-4.jpg";
+import { FaLinkedin, FaTwitter } from "react-icons/fa";
 function About() {
-  return <div>About</div>;
+  return (
+    <section className="container mx-auto px-6 text-gray-800">
+      <div className="flex md:flex-row flex-col justify-between mt-16 text-center ">
+        <img className="md:w-[45%] md:block hidden " src={One} alt="" />
+        <div className="md:w-[45%] w-90% flex flex-col justify-end gap-6">
+          <h3 className="text-7xl  md:text-left ">
+            Your team of <br /> professionals
+          </h3>
+          <p className="text-2xl leading-[1.5]  tracking-wide">
+            Our small team of world-class professionals will work with you every
+            step of the way. Strong relationships are at the core of everything
+            we do. This extends to the relationship our projects have with their
+            surroundings.
+          </p>
+        </div>
+      </div>
+      <div className="flex md:flex-row flex-col gap-6 mt-36 text-center">
+        <img className="md:w-[45%]  md:block hidden" src={Two} alt="" />
+        <div className="md:w-[45%] w-90% flex flex-col justify-end gap-6">
+          <h3 className="text-7xl ">Our Heritage</h3>
+          <p className="text-2xl leading-[1.5]  tracking-wide">
+            Founded in 2007, we started as a trio of architects. Our
+            complimentary skills and relentless attention to detail turned Arch
+            into one of the most sought after boutique firms in the country.{" "}
+            <br />
+            Speciliazing in Urban Design allowed us to focus on creating
+            exceptional structures that live in harmony with their surroundings.
+            We consider every detail from every surrounding element to inform
+            our designs. <br /> Our small team of world-class professionals
+            provides input on every project.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h3>The Leaders</h3>
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-8">
+          <div className=" flex flex-col space-y-3">
+            <img className="w-full" src={p2} alt="leaders" />
+            <h3 className="text-3xl font-semibold">Thompson Smith</h3>
+            <span className="text-xl tracking-wide">Head of Finance</span>
+            <span className="flex space-x-4">
+              <FaTwitter size={30} /> <FaLinkedin size={30} />
+            </span>
+          </div>
+          <div className=" flex flex-col space-y-3">
+            <img className="w-full" src={p3} alt="leaders" />{" "}
+            <h3 className="text-3xl font-semibold">Anthony Santos</h3>
+            <span className="text-xl tracking-wide">Structural Engineer</span>
+            <span className="flex space-x-4">
+              <FaTwitter size={30} /> <FaLinkedin size={30} />
+            </span>
+          </div>
+          <div className=" flex flex-col space-y-3">
+            <img className="w-full" src={p4} alt="leaders" />{" "}
+            <h3 className="text-3xl font-semibold">Maria Simpson</h3>
+            <span className="text-xl tracking-wide">Senior Architect</span>
+            <span className="flex space-x-4">
+              <FaTwitter size={30} /> <FaLinkedin size={30} />
+            </span>
+          </div>
+          <div className=" flex flex-col space-y-3">
+            <img
+              src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+            <h3 className="text-3xl font-semibold">Jake Daniels</h3>
+            <span className="text-xl tracking-wide">Chief Architect</span>
+            <span className="flex space-x-4">
+              <FaTwitter size={30} /> <FaLinkedin size={30} />
+            </span>
+          </div>
+
+          <div className=" flex flex-col space-y-3">
+            <img
+              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+            <h3 className="text-3xl font-semibold">Jackson Rourke</h3>
+            <span className="text-xl tracking-wide">Lead Designer</span>
+            <span className="flex space-x-4">
+              <FaTwitter size={30} /> <FaLinkedin size={30} />
+            </span>
+          </div>
+
+          <div className=" flex flex-col space-y-3">
+            <img
+              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+            <h3 className="text-3xl font-semibold">James Brown</h3>
+            <span className="text-xl tracking-wide">Head of Finance</span>
+            <span className="flex space-x-4">
+              <FaTwitter size={30} /> <FaLinkedin size={30} />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 export default About;
