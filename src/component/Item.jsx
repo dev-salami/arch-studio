@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 function Item({ image, text, num, btn, date }) {
   return (
-    <div className="relative min-h-[60vh] w-full  mx-auto border-2 border-red-400 cursor-pointer ">
+    <div className="relative min-h-[60vh] w-full  mx-auto  cursor-pointer ">
       <img className="absolute h-full w-full " src={image} alt="" />
       {/* <div className="absolute inset-0">abjhekjlrekverklv;mrkjvnvmrlo</div> */}
       {btn && (

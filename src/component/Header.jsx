@@ -138,7 +138,7 @@ function Header() {
             >
               Welcome to Arch Studio
             </h3>
-            <p className="text-2xl md:text-3xl font-extralight  md:pt-20">
+            <p className="text-3xl md:text-4xl font-extralight leading-9 tracking-tight  md:pt-20">
               We have a unique network and skillset to help bring your projects
               to life. Our small team of highly skilled individuals combined
               with our large network put us in a strong position to deliver
@@ -155,26 +155,7 @@ function Header() {
           </div>
         </main>
       </main>
-      {/* <section className="container mx-auto lg:px-8">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
-          <div className="relative ">
-            <Item image={D} />
-          </div>
-          <div className="relative ">
-            <Item image={E} />
-          </div>
-          <div className="relative ">
-            <Item image={F} />
-          </div>
-        </div>
-      </section> */}
-      {/* <section className="bg-main  mx-auto container h-[70vh]">
-        Small team <br />
-        big ideas
-      </section> */}
-      {/* <section className="container my-20   mx-auto">
-        <img className="absolute w-full h-[70vh] " src={bg} alt="" />
-      </section> */}
+      
     </section>
   );
 }

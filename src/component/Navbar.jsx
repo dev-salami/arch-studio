@@ -52,29 +52,33 @@ function Navbar() {
       <hr className="border-b-2 border-black" />
       <div
         className={`nav duration-1000 ${
-          Open ? "z-[99] " : "-translate-y-[700px] "
+          Open ? "z-[99] " : "-translate-y-[900px] z-[99] "
         }`}
       >
-        <ul className="flex flex-col space-y-8 pt-8 text-center text-4xl w-fit mx-auto ">
+        <ul className="flex flex-col  pt-8 h-full justify-evenly text-center text-5xl w-fit mx-auto ">
           <NavLink
+            onClick={() => setOpen(false)}
             to="/"
             className={({ isActive }) => (isActive ? " active" : "link ")}
           >
             Home
           </NavLink>
           <NavLink
+            onClick={() => setOpen(false)}
             to="Portfolio"
             className={({ isActive }) => (isActive ? " active" : "link")}
           >
             Portfolio
           </NavLink>
           <NavLink
+            onClick={() => setOpen(false)}
             to="About"
             className={({ isActive }) => (isActive ? " active" : "link")}
           >
             About Us
           </NavLink>
           <NavLink
+            onClick={() => setOpen(false)}
             to="Contact"
             className={({ isActive }) => (isActive ? " active" : "link")}
           >
