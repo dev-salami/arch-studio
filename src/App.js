@@ -1,24 +1,51 @@
-import "./App.css";
+import React, { lazy, Suspense } from "react";
+
 import Home from "./pages/Home";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+
+// import Navbar from "./component/Navbar";
+import Error from "./pages/Error";
+// import About from "./pages/About";
+// import Contact from "./pages/Contact";
+
+import Loader from "./component/Loader";
 import Navbar from "./component/Navbar";
-import Portfolio from "./pages/Portfolio";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Footer from "./component/Footer";
+const Portfolio = lazy(() => import("./pages/Portfolio"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
-  );
+	return (
+		<>
+			<BrowserRouter>
+				<Suspense fallback={<Loader />}>
+					<Navbar />
+					<Routes>
+						<Route
+							index
+							element={<Home />}
+						/>
+						<Route
+							path="/portfolio"
+							element={<Portfolio />}
+						/>
+						<Route
+							path="/about"
+							element={<About />}
+						/>
+						<Route
+							path="/contact"
+							element={<Contact />}
+						/>
+						<Route
+							path="*"
+							element={<Error />}
+						/>
+					</Routes>
+				</Suspense>
+			</BrowserRouter>
+		</>
+	);
 }
 
 export default App;
