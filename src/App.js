@@ -1,13 +1,7 @@
 import React, { lazy, Suspense } from "react";
-
 import Home from "./pages/Home";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-
-// import Navbar from "./component/Navbar";
 import Error from "./pages/Error";
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
-
 import Loader from "./component/Loader";
 import Navbar from "./component/Navbar";
 const Portfolio = lazy(() => import("./pages/Portfolio"));
